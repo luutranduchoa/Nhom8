@@ -1,0 +1,111 @@
+﻿using Medicine.DTOs;
+using Medicine.Models;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace Medicine.Controllers
+{
+    [Route("api/[controller]")]
+    [Route("api/DrugInteractions")]
+    [ApiController]
+    public class InteractionsController : ControllerBase
+    {
+        private readonly MedicalDbContext _context;
+
+        public InteractionsController(MedicalDbContext context)
+        {
+            _context = context;
+        }
+
+        // GET: api/Interactions
+        [HttpGet]
+        public async Task<IActionResult> GetInteractions()
+        {
+            var interactions = await _context.DrugInteractions
+                .Include(di => di.SourceDrug)
+                .Include(di => di.TargetDrug)
+                .Select(di => new
+                {
+                    SourceDrugId = di.SourceDrugId,
+                    SourceDrugName = di.SourceDrug.BrandName,
+                    TargetDrugId = di.TargetDrugId,
+                    TargetDrugName = di.TargetDrug.BrandName,
+                    Severity = di.Severity,
+                    Description = di.Description
+                })
+                .ToListAsync();
+
+            return Ok(interactions);
+        }
+
+        // POST: api/Interactions
+        [HttpPost]
+        public async Task<IActionResult> CreateInteraction(CreateInteractionDto dto)
+        {
+            if (dto.SourceDrugId == dto.TargetDrugId)
+            {
+                return BadRequest("Một thuộc không thể tương tác với chính nó.");
+            }
+
+            var sourceExists = await _context.Drugs.AnyAsync(d => d.Id == dto.SourceDrugId);
+            var targetExists = await _context.Drugs.AnyAsync(d => d.Id == dto.TargetDrugId);
+
+            if (!sourceExists || !targetExists)
+            {
+                return NotFound("Không tìm thấy thông tin thuốc.");
+            }
+
+            // Đảm bảo thống nhất cấu trúc luôn lưu theo ID bé đứng trước hoặc kiểm tra cả 2 chiều
+            var existing = await _context.DrugInteractions
+                .FirstOrDefaultAsync(di => 
+                    (di.SourceDrugId == dto.SourceDrugId && di.TargetDrugId == dto.TargetDrugId) ||
+                    (di.SourceDrugId == dto.TargetDrugId && di.TargetDrugId == dto.SourceDrugId)
+                );
+
+            if (existing != null)
+            {
+                return BadRequest("Tương tác giữa hai thuốc này đã tồn tại.");
+            }
+
+            // Để dễ quản lý, có thể gán SourceDrugId là thuốc có ID nhỏ hơn
+            int sourceId = dto.SourceDrugId < dto.TargetDrugId ? dto.SourceDrugId : dto.TargetDrugId;
+            int targetId = dto.SourceDrugId < dto.TargetDrugId ? dto.TargetDrugId : dto.SourceDrugId;
+
+            var interaction = new DrugInteraction
+            {
+                SourceDrugId = sourceId,
+                TargetDrugId = targetId,
+                Severity = dto.Severity,
+                Description = dto.Description
+            };
+
+            _context.DrugInteractions.Add(interaction);
+            await _context.SaveChangesAsync();
+
+            return Ok(new { message = "Thêm tương tác thuốc thành công." });
+        }
+
+        // DELETE: api/Interactions/5/6
+        [HttpDelete("{sourceId}/{targetId}")]
+        public async Task<IActionResult> DeleteInteraction(int sourceId, int targetId)
+        {
+            var interaction = await _context.DrugInteractions
+                .FirstOrDefaultAsync(di => 
+                    (di.SourceDrugId == sourceId && di.TargetDrugId == targetId) ||
+                    (di.SourceDrugId == targetId && di.TargetDrugId == sourceId)
+                );
+
+            if (interaction == null)
+            {
+                return NotFound("Không tìm thấy tương tác thuốc.");
+            }
+
+            _context.DrugInteractions.Remove(interaction);
+            await _context.SaveChangesAsync();
+
+            return Ok(new { message = "Xóa tương tác thuốc thành công." });
+        }
+    }
+}

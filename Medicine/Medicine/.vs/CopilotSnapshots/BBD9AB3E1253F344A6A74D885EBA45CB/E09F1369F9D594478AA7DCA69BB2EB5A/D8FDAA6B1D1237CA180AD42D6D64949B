@@ -1,0 +1,136 @@
+﻿using Medicine.DTOs;
+using Medicine.Models;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace Medicine.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class ProtocolsController : ControllerBase
+    {
+        private readonly MedicalDbContext _context;
+
+        public ProtocolsController(MedicalDbContext context)
+        {
+            _context = context;
+        }
+
+        // GET: api/Protocols
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<ProtocolDto>>> GetProtocols()
+        {
+            var protocols = await _context.SuggestedProtocols
+                .Include(p => p.Disease)
+                .Include(p => p.Details)
+                .ThenInclude(pd => pd.Drug)
+                .Select(p => new ProtocolDto
+                {
+                    Id = p.Id,
+                    Title = p.Title,
+                    DiseaseId = p.DiseaseId,
+                    DiseaseName = p.Disease != null ? p.Disease.Name : null,
+                    IcdCode = p.Disease != null ? p.Disease.Icd10Code : null,
+                    Notes = p.Notes,
+                    Details = p.Details.Select(pd => new ProtocolDetailDto
+                    {
+                        DrugId = pd.DrugId,
+                        DrugName = pd.Drug != null ? pd.Drug.BrandName : "",
+                        GenericName = pd.Drug != null ? pd.Drug.GenericName : "",
+                        DosageInstruction = pd.DosageInstruction
+                    }).ToList()
+                })
+                .ToListAsync();
+
+            return Ok(protocols);
+        }
+
+        // GET: api/Protocols/5
+        [HttpGet("{id}")]
+        public async Task<ActionResult<ProtocolDto>> GetProtocol(int id)
+        {
+            var p = await _context.SuggestedProtocols
+                .Include(pr => pr.Disease)
+                .Include(pr => pr.Details)
+                .ThenInclude(pd => pd.Drug)
+                .FirstOrDefaultAsync(pr => pr.Id == id);
+
+            if (p == null) return NotFound("Không tìm thấy phác đồ.");
+
+            var dto = new ProtocolDto
+            {
+                Id = p.Id,
+                Title = p.Title,
+                DiseaseId = p.DiseaseId,
+                DiseaseName = p.Disease != null ? p.Disease.Name : null,
+                IcdCode = p.Disease != null ? p.Disease.Icd10Code : null,
+                Notes = p.Notes,
+                Details = p.Details.Select(pd => new ProtocolDetailDto
+                {
+                    DrugId = pd.DrugId,
+                    DrugName = pd.Drug != null ? pd.Drug.BrandName : "",
+                    GenericName = pd.Drug != null ? pd.Drug.GenericName : "",
+                    DosageInstruction = pd.DosageInstruction
+                }).ToList()
+            };
+
+            // Kểm tra tương tác thuốc
+            var drugIds = dto.Details.Select(d => d.DrugId).ToList();
+            dto.Warnings = await CheckInteractions(drugIds);
+
+            return Ok(dto);
+        }
+
+        // POST: api/Protocols
+        // Tự thêm đơn thuốc đề xuất để tra cứu
+        [HttpPost]
+        public async Task<ActionResult<ProtocolDto>> CreateProtocol(CreateProtocolDto dto)
+        {
+            if (string.IsNullOrWhiteSpace(dto.Title))
+            {
+                return BadRequest("Tiêu đề phác đồ không được để trống.");
+            }
+
+            var protocol = new SuggestedProtocol
+            {
+                Title = dto.Title,
+                DiseaseId = dto.DiseaseId,
+                Notes = dto.Notes,
+                Details = dto.Details.Select(d => new SuggestedProtocolDetail
+                {
+                    DrugId = d.DrugId,
+                    DosageInstruction = d.DosageInstruction
+                }).ToList()
+            };
+
+            _context.SuggestedProtocols.Add(protocol);
+            await _context.SaveChangesAsync();
+
+            return await GetProtocol(protocol.Id);
+        }
+
+        // Hàm hỗ trợ kiểm tra tương tác cho danh sách ID thuốc
+        private async Task<List<InteractionWarningDto>> CheckInteractions(List<int> drugIds)
+        {
+            if (drugIds == null || drugIds.Count < 2) return new List<InteractionWarningDto>();
+
+            var interactions = await _context.DrugInteractions
+                .Include(di => di.SourceDrug)
+                .Include(di => di.TargetDrug)
+                .Where(di => drugIds.Contains(di.SourceDrugId) && drugIds.Contains(di.TargetDrugId))
+                .ToListAsync();
+
+            return interactions.Select(di => new InteractionWarningDto
+            {
+                SourceDrugName = di.SourceDrug.BrandName,
+                TargetDrugName = di.TargetDrug.BrandName,
+                Severity = di.Severity,
+                Description = di.Description,
+                IsSevere = di.Severity.ToLower() == "nặng" || di.Severity.ToLower() == "severe" || di.Severity.ToLower() == "high" || di.Description.ToLower().Contains("đối kháng")
+            }).ToList();
+        }
+    }
+}

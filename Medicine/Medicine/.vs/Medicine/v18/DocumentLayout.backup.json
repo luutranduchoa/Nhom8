@@ -1,0 +1,688 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|d:\\laptrinh web\\cnpm\\medicine\\medicine\\medicine\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|solutionrelative:medicine\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|d:\\laptrinh web\\cnpm\\medicine\\medicine\\medicine\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|solutionrelative:medicine\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|d:\\laptrinh web\\cnpm\\medicine\\medicine\\medicine\\dtos\\inventorytransactiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|solutionrelative:medicine\\dtos\\inventorytransactiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|d:\\laptrinh web\\cnpm\\medicine\\medicine\\medicine\\dtos\\drugstockdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|solutionrelative:medicine\\dtos\\drugstockdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|d:\\laptrinh web\\cnpm\\medicine\\medicine\\medicine\\controllers\\inventorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|solutionrelative:medicine\\controllers\\inventorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|d:\\laptrinh web\\cnpm\\medicine\\medicine\\medicine\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|solutionrelative:medicine\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|d:\\laptrinh web\\cnpm\\medicine\\medicine\\medicine\\dtos\\createinteractiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|solutionrelative:medicine\\dtos\\createinteractiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|d:\\laptrinh web\\cnpm\\medicine\\medicine\\medicine\\dtos\\protocoldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|solutionrelative:medicine\\dtos\\protocoldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|d:\\laptrinh web\\cnpm\\medicine\\medicine\\medicine\\controllers\\searchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|solutionrelative:medicine\\controllers\\searchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|d:\\laptrinh web\\cnpm\\medicine\\medicine\\medicine\\models\\medicaldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|solutionrelative:medicine\\models\\medicaldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|d:\\laptrinh web\\cnpm\\medicine\\medicine\\medicine\\models\\drug.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|solutionrelative:medicine\\models\\drug.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|d:\\laptrinh web\\cnpm\\medicine\\medicine\\medicine\\models\\inventorytransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|solutionrelative:medicine\\models\\inventorytransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|d:\\laptrinh web\\cnpm\\medicine\\medicine\\medicine\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|solutionrelative:medicine\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|d:\\laptrinh web\\cnpm\\medicine\\medicine\\medicine\\dtos\\createdrugdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|solutionrelative:medicine\\dtos\\createdrugdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|d:\\laptrinh web\\cnpm\\medicine\\medicine\\medicine\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|solutionrelative:medicine\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|d:\\laptrinh web\\cnpm\\medicine\\medicine\\medicine\\models\\drugcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|solutionrelative:medicine\\models\\drugcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|d:\\laptrinh web\\cnpm\\medicine\\medicine\\medicine\\dtos\\createcontraindicationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|solutionrelative:medicine\\dtos\\createcontraindicationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|d:\\laptrinh web\\cnpm\\medicine\\medicine\\medicine\\dtos\\createindicationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|solutionrelative:medicine\\dtos\\createindicationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|d:\\laptrinh web\\cnpm\\medicine\\medicine\\medicine\\dtos\\interactiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|solutionrelative:medicine\\dtos\\interactiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|d:\\laptrinh web\\cnpm\\medicine\\medicine\\medicine\\dtos\\drugdetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|solutionrelative:medicine\\dtos\\drugdetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|d:\\laptrinh web\\cnpm\\medicine\\medicine\\medicine\\dtos\\diseasedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|solutionrelative:medicine\\dtos\\diseasedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|d:\\laptrinh web\\cnpm\\medicine\\medicine\\medicine\\models\\indication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|solutionrelative:medicine\\models\\indication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|d:\\laptrinh web\\cnpm\\medicine\\medicine\\medicine\\models\\contraindication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|solutionrelative:medicine\\models\\contraindication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|d:\\laptrinh web\\cnpm\\medicine\\medicine\\medicine\\models\\druginteraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|solutionrelative:medicine\\models\\druginteraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|d:\\laptrinh web\\cnpm\\medicine\\medicine\\medicine\\models\\disease.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|solutionrelative:medicine\\models\\disease.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|d:\\laptrinh web\\cnpm\\medicine\\medicine\\medicine\\migrations\\20260427123459_adddrugimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|solutionrelative:medicine\\migrations\\20260427123459_adddrugimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|d:\\laptrinh web\\cnpm\\medicine\\medicine\\medicine\\migrations\\20260430103607_addcategorytable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|solutionrelative:medicine\\migrations\\20260430103607_addcategorytable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|d:\\laptrinh web\\cnpm\\medicine\\medicine\\medicine\\dtos\\createinventorytransactiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|solutionrelative:medicine\\dtos\\createinventorytransactiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|d:\\laptrinh web\\cnpm\\medicine\\medicine\\medicine\\models\\prescription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|solutionrelative:medicine\\models\\prescription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|d:\\laptrinh web\\cnpm\\medicine\\medicine\\medicine\\models\\prescriptiondetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|solutionrelative:medicine\\models\\prescriptiondetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|d:\\laptrinh web\\cnpm\\medicine\\medicine\\medicine\\dtos\\prescriptiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|solutionrelative:medicine\\dtos\\prescriptiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|d:\\laptrinh web\\cnpm\\medicine\\medicine\\medicine\\dtos\\suggestedprescriptiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|solutionrelative:medicine\\dtos\\suggestedprescriptiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|d:\\laptrinh web\\cnpm\\medicine\\medicine\\medicine\\controllers\\prescriptionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|solutionrelative:medicine\\controllers\\prescriptionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|d:\\laptrinh web\\cnpm\\medicine\\medicine\\medicine\\models\\suggestedprotocol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|solutionrelative:medicine\\models\\suggestedprotocol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|d:\\laptrinh web\\cnpm\\medicine\\medicine\\medicine\\controllers\\protocolscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|solutionrelative:medicine\\controllers\\protocolscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|d:\\laptrinh web\\cnpm\\medicine\\medicine\\medicine\\controllers\\interactionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|solutionrelative:medicine\\controllers\\interactionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|d:\\laptrinh web\\cnpm\\medicine\\medicine\\medicine\\dtos\\updateinventorytransactiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|solutionrelative:medicine\\dtos\\updateinventorytransactiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|d:\\laptrinh web\\cnpm\\medicine\\medicine\\medicine\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|solutionrelative:medicine\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|d:\\laptrinh web\\cnpm\\medicine\\medicine\\medicine\\dtos\\authdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|solutionrelative:medicine\\dtos\\authdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|d:\\laptrinh web\\cnpm\\medicine\\medicine\\medicine\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|solutionrelative:medicine\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|d:\\laptrinh web\\cnpm\\medicine\\medicine\\medicine\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8994A0C9-B568-472B-8D8C-D151521CBB90}|Medicine\\Medicine.csproj|solutionrelative:medicine\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Medicine\\Controllers\\UsersController.cs",
+              "ToolTip": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Medicine\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T14:52:28.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "UserDto.cs",
+              "DocumentMoniker": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\DTOs\\UserDto.cs",
+              "RelativeDocumentMoniker": "Medicine\\DTOs\\UserDto.cs",
+              "ToolTip": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\DTOs\\UserDto.cs",
+              "RelativeToolTip": "Medicine\\DTOs\\UserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T14:52:12.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DrugStockDto.cs",
+              "DocumentMoniker": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\DTOs\\DrugStockDto.cs",
+              "RelativeDocumentMoniker": "Medicine\\DTOs\\DrugStockDto.cs",
+              "ToolTip": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\DTOs\\DrugStockDto.cs",
+              "RelativeToolTip": "Medicine\\DTOs\\DrugStockDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T13:19:12.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "InventoryTransactionDto.cs",
+              "DocumentMoniker": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\DTOs\\InventoryTransactionDto.cs",
+              "RelativeDocumentMoniker": "Medicine\\DTOs\\InventoryTransactionDto.cs",
+              "ToolTip": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\DTOs\\InventoryTransactionDto.cs",
+              "RelativeToolTip": "Medicine\\DTOs\\InventoryTransactionDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T13:19:02.209Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\Program.cs",
+              "RelativeDocumentMoniker": "Medicine\\Program.cs",
+              "ToolTip": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\Program.cs",
+              "RelativeToolTip": "Medicine\\Program.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAFEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T12:09:23.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "InventoryController.cs",
+              "DocumentMoniker": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\Controllers\\InventoryController.cs",
+              "RelativeDocumentMoniker": "Medicine\\Controllers\\InventoryController.cs",
+              "ToolTip": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\Controllers\\InventoryController.cs",
+              "RelativeToolTip": "Medicine\\Controllers\\InventoryController.cs",
+              "ViewState": "AgIAAJ0AAAAAAAAAAAAkwLoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T13:19:23.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Medicine\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Medicine\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAgwFUAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T13:07:59.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Medicine\\Controllers\\AdminController.cs",
+              "ToolTip": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Medicine\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOcAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T12:09:23.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CreateInteractionDto.cs",
+              "DocumentMoniker": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\DTOs\\CreateInteractionDto.cs",
+              "RelativeDocumentMoniker": "Medicine\\DTOs\\CreateInteractionDto.cs",
+              "ToolTip": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\DTOs\\CreateInteractionDto.cs",
+              "RelativeToolTip": "Medicine\\DTOs\\CreateInteractionDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-14T04:53:28.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "InteractionsController.cs",
+              "DocumentMoniker": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\Controllers\\InteractionsController.cs",
+              "RelativeDocumentMoniker": "Medicine\\Controllers\\InteractionsController.cs",
+              "ToolTip": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\Controllers\\InteractionsController.cs",
+              "RelativeToolTip": "Medicine\\Controllers\\InteractionsController.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAIBJwG0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-14T04:53:52.731Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\Models\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "Medicine\\Models\\ApplicationUser.cs",
+              "ToolTip": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\Models\\ApplicationUser.cs",
+              "RelativeToolTip": "Medicine\\Models\\ApplicationUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T13:07:28.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "AuthDtos.cs",
+              "DocumentMoniker": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\DTOs\\AuthDtos.cs",
+              "RelativeDocumentMoniker": "Medicine\\DTOs\\AuthDtos.cs",
+              "ToolTip": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\DTOs\\AuthDtos.cs",
+              "RelativeToolTip": "Medicine\\DTOs\\AuthDtos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T13:07:45.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "UpdateInventoryTransactionDto.cs",
+              "DocumentMoniker": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\DTOs\\UpdateInventoryTransactionDto.cs",
+              "RelativeDocumentMoniker": "Medicine\\DTOs\\UpdateInventoryTransactionDto.cs",
+              "ToolTip": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\DTOs\\UpdateInventoryTransactionDto.cs",
+              "RelativeToolTip": "Medicine\\DTOs\\UpdateInventoryTransactionDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-14T06:59:42.074Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "ProtocolsController.cs",
+              "DocumentMoniker": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\Controllers\\ProtocolsController.cs",
+              "RelativeDocumentMoniker": "Medicine\\Controllers\\ProtocolsController.cs",
+              "ToolTip": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\Controllers\\ProtocolsController.cs",
+              "RelativeToolTip": "Medicine\\Controllers\\ProtocolsController.cs",
+              "ViewState": "AgIAAKAAAAAAAAAAAIBQwL0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-13T04:21:23.316Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProtocolDto.cs",
+              "DocumentMoniker": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\DTOs\\ProtocolDto.cs",
+              "RelativeDocumentMoniker": "Medicine\\DTOs\\ProtocolDto.cs",
+              "ToolTip": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\DTOs\\ProtocolDto.cs",
+              "RelativeToolTip": "Medicine\\DTOs\\ProtocolDto.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAqwCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-13T04:21:12.731Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "SuggestedProtocol.cs",
+              "DocumentMoniker": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\Models\\SuggestedProtocol.cs",
+              "RelativeDocumentMoniker": "Medicine\\Models\\SuggestedProtocol.cs",
+              "ToolTip": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\Models\\SuggestedProtocol.cs",
+              "RelativeToolTip": "Medicine\\Models\\SuggestedProtocol.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-13T04:21:02.246Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Prescription.cs",
+              "DocumentMoniker": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\Models\\Prescription.cs",
+              "RelativeDocumentMoniker": "Medicine\\Models\\Prescription.cs",
+              "ToolTip": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\Models\\Prescription.cs",
+              "RelativeToolTip": "Medicine\\Models\\Prescription.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T14:34:02.742Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SearchController.cs",
+              "DocumentMoniker": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\Controllers\\SearchController.cs",
+              "RelativeDocumentMoniker": "Medicine\\Controllers\\SearchController.cs",
+              "ToolTip": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\Controllers\\SearchController.cs",
+              "RelativeToolTip": "Medicine\\Controllers\\SearchController.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAYwGUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T12:09:23.734Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "PrescriptionDto.cs",
+              "DocumentMoniker": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\DTOs\\PrescriptionDto.cs",
+              "RelativeDocumentMoniker": "Medicine\\DTOs\\PrescriptionDto.cs",
+              "ToolTip": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\DTOs\\PrescriptionDto.cs",
+              "RelativeToolTip": "Medicine\\DTOs\\PrescriptionDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T14:34:24.155Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "PrescriptionsController.cs",
+              "DocumentMoniker": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\Controllers\\PrescriptionsController.cs",
+              "RelativeDocumentMoniker": "Medicine\\Controllers\\PrescriptionsController.cs",
+              "ToolTip": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\Controllers\\PrescriptionsController.cs",
+              "RelativeToolTip": "Medicine\\Controllers\\PrescriptionsController.cs",
+              "ViewState": "AgIAAJEAAAAAAAAAAIBJwN8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T14:34:51.606Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "PrescriptionDetail.cs",
+              "DocumentMoniker": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\Models\\PrescriptionDetail.cs",
+              "RelativeDocumentMoniker": "Medicine\\Models\\PrescriptionDetail.cs",
+              "ToolTip": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\Models\\PrescriptionDetail.cs",
+              "RelativeToolTip": "Medicine\\Models\\PrescriptionDetail.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T14:34:08.505Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "SuggestedPrescriptionDto.cs",
+              "DocumentMoniker": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\DTOs\\SuggestedPrescriptionDto.cs",
+              "RelativeDocumentMoniker": "Medicine\\DTOs\\SuggestedPrescriptionDto.cs",
+              "ToolTip": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\DTOs\\SuggestedPrescriptionDto.cs",
+              "RelativeToolTip": "Medicine\\DTOs\\SuggestedPrescriptionDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T14:34:31.083Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "CreateInventoryTransactionDto.cs",
+              "DocumentMoniker": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\DTOs\\CreateInventoryTransactionDto.cs",
+              "RelativeDocumentMoniker": "Medicine\\DTOs\\CreateInventoryTransactionDto.cs",
+              "ToolTip": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\DTOs\\CreateInventoryTransactionDto.cs",
+              "RelativeToolTip": "Medicine\\DTOs\\CreateInventoryTransactionDto.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAEBUwBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T13:19:07.517Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "InventoryTransaction.cs",
+              "DocumentMoniker": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\Models\\InventoryTransaction.cs",
+              "RelativeDocumentMoniker": "Medicine\\Models\\InventoryTransaction.cs",
+              "ToolTip": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\Models\\InventoryTransaction.cs",
+              "RelativeToolTip": "Medicine\\Models\\InventoryTransaction.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAEBUwBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T13:18:45.598Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\appsettings.json",
+              "RelativeDocumentMoniker": "Medicine\\appsettings.json",
+              "ToolTip": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\appsettings.json",
+              "RelativeToolTip": "Medicine\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-11T12:09:23.706Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Drug.cs",
+              "DocumentMoniker": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\Models\\Drug.cs",
+              "RelativeDocumentMoniker": "Medicine\\Models\\Drug.cs",
+              "ToolTip": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\Models\\Drug.cs",
+              "RelativeToolTip": "Medicine\\Models\\Drug.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAABYwBIAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T12:09:23.664Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MedicalDbContext.cs",
+              "DocumentMoniker": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\Models\\MedicalDbContext.cs",
+              "RelativeDocumentMoniker": "Medicine\\Models\\MedicalDbContext.cs",
+              "ToolTip": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\Models\\MedicalDbContext.cs",
+              "RelativeToolTip": "Medicine\\Models\\MedicalDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwA8AAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T12:09:23.599Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "20260430103607_AddCategoryTable.cs",
+              "DocumentMoniker": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\Migrations\\20260430103607_AddCategoryTable.cs",
+              "RelativeDocumentMoniker": "Medicine\\Migrations\\20260430103607_AddCategoryTable.cs",
+              "ToolTip": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\Migrations\\20260430103607_AddCategoryTable.cs",
+              "RelativeToolTip": "Medicine\\Migrations\\20260430103607_AddCategoryTable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T12:09:23.587Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "20260427123459_AddDrugImage.cs",
+              "DocumentMoniker": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\Migrations\\20260427123459_AddDrugImage.cs",
+              "RelativeDocumentMoniker": "Medicine\\Migrations\\20260427123459_AddDrugImage.cs",
+              "ToolTip": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\Migrations\\20260427123459_AddDrugImage.cs",
+              "RelativeToolTip": "Medicine\\Migrations\\20260427123459_AddDrugImage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T12:09:23.603Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CategoriesController.cs",
+              "DocumentMoniker": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\Controllers\\CategoriesController.cs",
+              "RelativeDocumentMoniker": "Medicine\\Controllers\\CategoriesController.cs",
+              "ToolTip": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\Controllers\\CategoriesController.cs",
+              "RelativeToolTip": "Medicine\\Controllers\\CategoriesController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwCIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T12:09:23.18Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CreateDrugDto.cs",
+              "DocumentMoniker": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\DTOs\\CreateDrugDto.cs",
+              "RelativeDocumentMoniker": "Medicine\\DTOs\\CreateDrugDto.cs",
+              "ToolTip": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\DTOs\\CreateDrugDto.cs",
+              "RelativeToolTip": "Medicine\\DTOs\\CreateDrugDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T12:09:23.611Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CreateContraindicationDto.cs",
+              "DocumentMoniker": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\DTOs\\CreateContraindicationDto.cs",
+              "RelativeDocumentMoniker": "Medicine\\DTOs\\CreateContraindicationDto.cs",
+              "ToolTip": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\DTOs\\CreateContraindicationDto.cs",
+              "RelativeToolTip": "Medicine\\DTOs\\CreateContraindicationDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T12:09:23.67Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DrugCategory.cs",
+              "DocumentMoniker": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\Models\\DrugCategory.cs",
+              "RelativeDocumentMoniker": "Medicine\\Models\\DrugCategory.cs",
+              "ToolTip": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\Models\\DrugCategory.cs",
+              "RelativeToolTip": "Medicine\\Models\\DrugCategory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T12:09:23.676Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CreateIndicationDto.cs",
+              "DocumentMoniker": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\DTOs\\CreateIndicationDto.cs",
+              "RelativeDocumentMoniker": "Medicine\\DTOs\\CreateIndicationDto.cs",
+              "ToolTip": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\DTOs\\CreateIndicationDto.cs",
+              "RelativeToolTip": "Medicine\\DTOs\\CreateIndicationDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T12:09:23.682Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "DiseaseDto.cs",
+              "DocumentMoniker": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\DTOs\\DiseaseDto.cs",
+              "RelativeDocumentMoniker": "Medicine\\DTOs\\DiseaseDto.cs",
+              "ToolTip": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\DTOs\\DiseaseDto.cs",
+              "RelativeToolTip": "Medicine\\DTOs\\DiseaseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T12:09:23.682Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "DrugDetailDto.cs",
+              "DocumentMoniker": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\DTOs\\DrugDetailDto.cs",
+              "RelativeDocumentMoniker": "Medicine\\DTOs\\DrugDetailDto.cs",
+              "ToolTip": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\DTOs\\DrugDetailDto.cs",
+              "RelativeToolTip": "Medicine\\DTOs\\DrugDetailDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T12:09:23.682Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "DrugInteraction.cs",
+              "DocumentMoniker": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\Models\\DrugInteraction.cs",
+              "RelativeDocumentMoniker": "Medicine\\Models\\DrugInteraction.cs",
+              "ToolTip": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\Models\\DrugInteraction.cs",
+              "RelativeToolTip": "Medicine\\Models\\DrugInteraction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T12:09:23.706Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Contraindication.cs",
+              "DocumentMoniker": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\Models\\Contraindication.cs",
+              "RelativeDocumentMoniker": "Medicine\\Models\\Contraindication.cs",
+              "ToolTip": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\Models\\Contraindication.cs",
+              "RelativeToolTip": "Medicine\\Models\\Contraindication.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T12:09:23.72Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Indication.cs",
+              "DocumentMoniker": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\Models\\Indication.cs",
+              "RelativeDocumentMoniker": "Medicine\\Models\\Indication.cs",
+              "ToolTip": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\Models\\Indication.cs",
+              "RelativeToolTip": "Medicine\\Models\\Indication.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T12:09:23.725Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "InteractionDto.cs",
+              "DocumentMoniker": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\DTOs\\InteractionDto.cs",
+              "RelativeDocumentMoniker": "Medicine\\DTOs\\InteractionDto.cs",
+              "ToolTip": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\DTOs\\InteractionDto.cs",
+              "RelativeToolTip": "Medicine\\DTOs\\InteractionDto.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAEBUwAUAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T12:09:23.746Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Disease.cs",
+              "DocumentMoniker": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\Models\\Disease.cs",
+              "RelativeDocumentMoniker": "Medicine\\Models\\Disease.cs",
+              "ToolTip": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\Models\\Disease.cs",
+              "RelativeToolTip": "Medicine\\Models\\Disease.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T12:09:23.748Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
