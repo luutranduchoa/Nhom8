@@ -32,5 +32,6 @@ namespace Medicine.Controllers
             await _context.SaveChangesAsync();
             return Ok(new { Message = "Đã xóa loại." });
         }
+        
     }
 }

@@ -70,7 +70,7 @@ namespace Medicine.Controllers
                     };
                     _context.Indications.Add(indication);
                 }
-
+ 
                 await _context.SaveChangesAsync(); // Lưu tất cả liên kết
             }
 
