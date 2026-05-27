@@ -4338,11 +4338,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\Medicine.csproj",
+      "projectUniqueName": "D:\\LapTrinh WEB\\CNPM\\bài tập trong lớp\\New folder\\Nhom8\\Medicine\\Medicine\\Medicine\\Medicine.csproj",
       "projectName": "Medicine",
-      "projectPath": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\Medicine.csproj",
+      "projectPath": "D:\\LapTrinh WEB\\CNPM\\bài tập trong lớp\\New folder\\Nhom8\\Medicine\\Medicine\\Medicine\\Medicine.csproj",
       "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
-      "outputPath": "D:\\LapTrinh WEB\\CNPM\\Medicine\\Medicine\\Medicine\\obj\\",
+      "outputPath": "D:\\LapTrinh WEB\\CNPM\\bài tập trong lớp\\New folder\\Nhom8\\Medicine\\Medicine\\Medicine\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
