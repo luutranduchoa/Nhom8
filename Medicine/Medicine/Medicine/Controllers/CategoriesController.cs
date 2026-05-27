@@ -23,7 +23,6 @@ namespace Medicine.Controllers
             return Ok(new { Message = "Thêm loại thành công!" });
         }
 
-
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {

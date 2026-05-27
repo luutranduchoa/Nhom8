@@ -99,7 +99,7 @@ namespace Medicine.Controllers
             // Kiểm tra tương tác thuốc trước khi lưu
             var drugIds = dto.Details.Select(d => d.DrugId).ToList();
             var warnings = await CheckDrugInteractionsCore(drugIds);
-            
+
             // Nếu có cảnh báo mức độ "Nặng" (Severe), có thể cấu hình để chặn tạo đơn 
             // (hoặc chỉ trả về cảnh báo tùy logic nghiệp vụ). Ở đây ta vẫn tạo nhưng cho biết cảnh báo.
             // Nếu muốn chặn:

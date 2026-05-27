@@ -35,7 +35,6 @@ namespace Medicine.Controllers
                     MinStockLevel = d.MinStockLevel
                 })
                 .ToListAsync();
-
             return Ok(stock);
         }
 
@@ -66,7 +65,6 @@ namespace Medicine.Controllers
                     MinStockLevel = t.Drug != null ? t.Drug.MinStockLevel : 0
                 })
                 .ToListAsync();
-
             return Ok(transactions);
         }
 

@@ -58,7 +58,7 @@ namespace Medicine.Controllers
 
             // Đảm bảo thống nhất cấu trúc luôn lưu theo ID bé đứng trước hoặc kiểm tra cả 2 chiều
             var existing = await _context.DrugInteractions
-                .FirstOrDefaultAsync(di => 
+                .FirstOrDefaultAsync(di =>
                     (di.SourceDrugId == dto.SourceDrugId && di.TargetDrugId == dto.TargetDrugId) ||
                     (di.SourceDrugId == dto.TargetDrugId && di.TargetDrugId == dto.SourceDrugId)
                 );
@@ -91,7 +91,7 @@ namespace Medicine.Controllers
         public async Task<IActionResult> DeleteInteraction(int sourceId, int targetId)
         {
             var interaction = await _context.DrugInteractions
-                .FirstOrDefaultAsync(di => 
+                .FirstOrDefaultAsync(di =>
                     (di.SourceDrugId == sourceId && di.TargetDrugId == targetId) ||
                     (di.SourceDrugId == targetId && di.TargetDrugId == sourceId)
                 );

@@ -70,7 +70,7 @@ namespace Medicine.Controllers
                     };
                     _context.Indications.Add(indication);
                 }
- 
+
                 await _context.SaveChangesAsync(); // Lưu tất cả liên kết
             }
 
@@ -80,7 +80,6 @@ namespace Medicine.Controllers
                 {
                     if (string.IsNullOrWhiteSpace(contra.Icd10Code)) continue;
 
-  
                     var existingDisease = await _context.Diseases
                         .FirstOrDefaultAsync(d => d.Icd10Code.ToLower() == contra.Icd10Code.ToLower());
 
@@ -200,12 +199,14 @@ namespace Medicine.Controllers
                 drug.GenericName,
                 drug.DosageForm,
                 drug.ImageUrl,
-                Indications = drug.Indications.Select(i => new {
+                Indications = drug.Indications.Select(i => new
+                {
                     i.Disease.Icd10Code,
                     DiseaseName = i.Disease.Name,
                     i.DosageInstruction
                 }),
-                Contraindications = drug.Contraindications.Select(c => new {
+                Contraindications = drug.Contraindications.Select(c => new
+                {
                     c.Disease.Icd10Code,
                     DiseaseName = c.Disease.Name,
                     c.WarningNotes
