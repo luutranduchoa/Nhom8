@@ -42,7 +42,7 @@ namespace Medicine.Controllers
                 UserName = dto.Email,
                 FullName = dto.FullName
             };
-            
+              
             var result = await _userManager.CreateAsync(user, dto.Password);
             if (!result.Succeeded)
             {

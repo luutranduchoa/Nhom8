@@ -80,6 +80,7 @@ namespace Medicine.Controllers
                 {
                     if (string.IsNullOrWhiteSpace(contra.Icd10Code)) continue;
 
+  
                     var existingDisease = await _context.Diseases
                         .FirstOrDefaultAsync(d => d.Icd10Code.ToLower() == contra.Icd10Code.ToLower());
 
