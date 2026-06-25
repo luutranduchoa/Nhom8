@@ -7,7 +7,7 @@ const config = {
   // API Configuration
   api: {
     // Base URL for API calls (from env or default for dev)
-    baseURL: import.meta.env.VITE_API_URL || 'http://localhost:5054/api',
+    baseURL: import.meta.env.VITE_API_URL || https://romp-hatchery-underhand.ngrok-free.dev/api',
 
     // Request timeout in milliseconds
     timeout: import.meta.env.VITE_API_TIMEOUT ? parseInt(import.meta.env.VITE_API_TIMEOUT) : 30000,
