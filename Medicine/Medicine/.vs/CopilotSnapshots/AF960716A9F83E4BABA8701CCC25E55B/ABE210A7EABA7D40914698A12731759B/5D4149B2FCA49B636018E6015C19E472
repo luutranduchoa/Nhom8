@@ -1,0 +1,130 @@
+﻿using Medicine.DTOs;
+using Medicine.Models;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace Medicine.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class InventoryController : ControllerBase
+    {
+        private readonly MedicalDbContext _context;
+
+        public InventoryController(MedicalDbContext context)
+        {
+            _context = context;
+        }
+
+        // GET: api/Inventory/Stock
+        // Lấy danh sách tồn kho của tất cả các thuốc
+        [HttpGet("Stock")]
+        public async Task<ActionResult<IEnumerable<DrugStockDto>>> GetStock()
+        {
+            var stock = await _context.Drugs
+                .Select(d => new DrugStockDto
+                {
+                    DrugId = d.Id,
+                    DrugName = d.BrandName,
+                    GenericName = d.GenericName,
+                    DosageForm = d.DosageForm,
+                    StockQuantity = d.StockQuantity
+                })
+                .ToListAsync();
+
+            return Ok(stock);
+        }
+
+        // GET: api/Inventory/Transactions
+        // Lấy lịch sử giao dịch nhập/xuất kho
+        [HttpGet("Transactions")]
+        public async Task<ActionResult<IEnumerable<InventoryTransactionDto>>> GetTransactions()
+        {
+            var transactions = await _context.InventoryTransactions
+                .Include(t => t.Drug)
+                .OrderByDescending(t => t.TransactionDate)
+                .Select(t => new InventoryTransactionDto
+                {
+                    Id = t.Id,
+                    DrugId = t.DrugId,
+                    DrugName = t.Drug != null ? t.Drug.BrandName : "Unknown",
+                    Quantity = t.Quantity,
+                    TransactionType = t.TransactionType,
+                    TransactionDate = t.TransactionDate,
+                    Note = t.Note
+                })
+                .ToListAsync();
+
+            return Ok(transactions);
+        }
+
+        // POST: api/Inventory/Transaction
+        // Tạo giao dịch nhập hoặc xuất kho
+        [HttpPost("Transaction")]
+        public async Task<ActionResult<InventoryTransactionDto>> CreateTransaction(CreateInventoryTransactionDto dto)
+        {
+            var drug = await _context.Drugs.FindAsync(dto.DrugId);
+            if (drug == null)
+            {
+                return NotFound($"Không tìm thấy thuốc với Id {dto.DrugId}");
+            }
+
+            if (dto.Quantity <= 0)
+            {
+                return BadRequest("Số lượng phải lớn hơn 0");
+            }
+
+            if (string.IsNullOrEmpty(dto.TransactionType) || 
+                (dto.TransactionType.ToLower() != "import" && dto.TransactionType.ToLower() != "export"))
+            {
+                return BadRequest("Loại giao dịch không hợp lệ (chỉ hỗ trợ 'Import' hoặc 'Export')");
+            }
+
+            var type = dto.TransactionType.Substring(0, 1).ToUpper() + dto.TransactionType.Substring(1).ToLower();
+
+            if (type == "Export" && drug.StockQuantity < dto.Quantity)
+            {
+                return BadRequest($"Số lượng tồn kho không đủ. Thuốc '{drug.BrandName}' chỉ còn {drug.StockQuantity} sản phẩm.");
+            }
+
+            var transaction = new InventoryTransaction
+            {
+                DrugId = dto.DrugId,
+                Quantity = dto.Quantity,
+                TransactionType = type,
+                Note = dto.Note,
+                TransactionDate = System.DateTime.UtcNow
+            };
+
+            // Cập nhật tồn kho
+            if (type == "Import")
+            {
+                drug.StockQuantity += dto.Quantity;
+            }
+            else if (type == "Export")
+            {
+                drug.StockQuantity -= dto.Quantity;
+            }
+
+            _context.Drugs.Update(drug); // <-- Đảm bảo EF Core nhận biết có sự thay đổi
+            _context.InventoryTransactions.Add(transaction);
+            await _context.SaveChangesAsync();
+
+            var result = new InventoryTransactionDto
+            {
+                Id = transaction.Id,
+                DrugId = transaction.DrugId,
+                DrugName = drug.BrandName,
+                Quantity = transaction.Quantity,
+                TransactionType = transaction.TransactionType,
+                TransactionDate = transaction.TransactionDate,
+                Note = transaction.Note
+            };
+
+            return CreatedAtAction(nameof(GetTransactions), new { id = transaction.Id }, result);
+        }
+    }
+}

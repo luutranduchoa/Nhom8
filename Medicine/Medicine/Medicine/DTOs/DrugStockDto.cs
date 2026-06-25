@@ -1,0 +1,21 @@
+namespace Medicine.DTOs
+{
+    public class DrugStockDto
+    {
+        public int DrugId { get; set; }
+        public string DrugName { get; set; } = string.Empty;
+        public string GenericName { get; set; } = string.Empty;
+        public string DosageForm { get; set; } = string.Empty;
+        public int StockQuantity { get; set; }
+
+        // Mở rộng dựa trên giao diện người dùng
+        public int MinStockLevel { get; set; }
+        public string? Sku { get; set; }
+        public string? BatchNumber { get; set; }
+        public string? Unit { get; set; }
+        public decimal? ImportPrice { get; set; }
+        public System.DateTime? ExpirationDate { get; set; }
+        public string? Supplier { get; set; }
+        public string? StorageLocation { get; set; }
+    }
+}

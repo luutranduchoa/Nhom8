@@ -1,0 +1,25 @@
+﻿namespace Medicine.Models
+{
+    public class Drug
+    {
+        public int Id { get; set; }
+        public string BrandName { get; set; } = string.Empty;
+        public string GenericName { get; set; } = string.Empty; // Hoạt chất
+        public string DosageForm { get; set; } = string.Empty; // Dạng bào chế
+
+        // Navigation properties
+        public ICollection<Indication> Indications { get; set; } = new List<Indication>();
+        public ICollection<Contraindication> Contraindications { get; set; } = new List<Contraindication>();
+
+        // Tương tác thuốc (Một thuốc có thể tương tác với nhiều thuốc khác)
+        public ICollection<DrugInteraction> InteractionsAsSource { get; set; } = new List<DrugInteraction>();
+        public ICollection<DrugInteraction> InteractionsAsTarget { get; set; } = new List<DrugInteraction>();
+        public string? ImageUrl { get; set; } // Thêm dòng này (có dấu ? để cho phép null nếu chưa có ảnh)
+        public int? CategoryId { get; set; }
+        public DrugCategory? Category { get; set; }
+
+        // Quản lý tồn kho
+        public int StockQuantity { get; set; } = 0;
+        public ICollection<InventoryTransaction> InventoryTransactions { get; set; } = new List<InventoryTransaction>();
+    }    
+}
