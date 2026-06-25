@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.26" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.26" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.26">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <!--
+    During local development Visual Studio may try to overwrite the running executable
+    which causes MSB3021 "file is being used by another process" build errors.
+    Add a small BeforeBuild target to attempt to stop any leftover running instance
+    of the app on Windows so builds don't fail because the exe is locked.
+    This only runs on developer machines and the command is best-effort (ContinueOnError).
+  -->
+  <PropertyGroup>
+    <!-- Increase copy retry to give the OS more time to release handles when possible -->
+    <CopyRetryCount>20</CopyRetryCount>
+    <CopyRetryDelayMilliseconds>500</CopyRetryDelayMilliseconds>
+  </PropertyGroup>
+
+  <Target Name="KillRunningApp" BeforeTargets="BeforeBuild" Condition="'$(OS)' == 'Windows_NT'">
+    <!-- Best-effort: kill only the project exe to avoid long manual steps when an old process is hanging -->
+    <Exec Command="taskkill /F /IM $(AssemblyName).exe" ContinueOnError="true" />
+  </Target>
+
+</Project>

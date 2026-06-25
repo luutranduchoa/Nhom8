@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Te8GZVbHUOA=",
+  "dgSpecHash": "OwadZ3S7AtA=",
   "success": true,
-  "projectFilePath": "D:\\LapTrinh WEB\\CNPM\\bài tập trong lớp\\New folder\\Nhom8\\Medicine\\Medicine\\Medicine\\Medicine.csproj",
+  "projectFilePath": "D:\\LapTrinh WEB\\CNPM\\Nhom8-2\\Medicine\\Medicine\\Medicine\\Medicine.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Acer\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Acer\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
