@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "targets": {
     "net8.0": {
       "Azure.Core/1.38.0": {
@@ -4338,11 +4338,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\LapTrinh WEB\\CNPM\\bài tập trong lớp\\New folder\\Nhom8\\Medicine\\Medicine\\Medicine\\Medicine.csproj",
+      "projectUniqueName": "D:\\LapTrinh WEB\\CNPM\\Nhom8-2\\Medicine\\Medicine\\Medicine\\Medicine.csproj",
       "projectName": "Medicine",
-      "projectPath": "D:\\LapTrinh WEB\\CNPM\\bài tập trong lớp\\New folder\\Nhom8\\Medicine\\Medicine\\Medicine\\Medicine.csproj",
+      "projectPath": "D:\\LapTrinh WEB\\CNPM\\Nhom8-2\\Medicine\\Medicine\\Medicine\\Medicine.csproj",
       "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
-      "outputPath": "D:\\LapTrinh WEB\\CNPM\\bài tập trong lớp\\New folder\\Nhom8\\Medicine\\Medicine\\Medicine\\obj\\",
+      "outputPath": "D:\\LapTrinh WEB\\CNPM\\Nhom8-2\\Medicine\\Medicine\\Medicine\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4362,6 +4362,7 @@
       },
       "frameworks": {
         "net8.0": {
+          "framework": "net8.0",
           "targetAlias": "net8.0",
           "projectReferences": {}
         }
@@ -4376,10 +4377,11 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "10.0.100"
+      "SdkAnalysisLevel": "10.0.300"
     },
     "frameworks": {
       "net8.0": {
+        "framework": "net8.0",
         "targetAlias": "net8.0",
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
@@ -4424,7 +4426,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
